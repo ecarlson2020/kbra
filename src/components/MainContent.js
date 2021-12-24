@@ -29,9 +29,9 @@ export default class MainContent extends React.Component{
 		if(fetch){
 			return fetch['results'].map((result, i) => (
 				<div key={i} className='box-outer'>
-					<div className='box border-radius flex'>
+					<div className='box border-radius'>
 						<img src={result.picture.large} />
-						<div className='box-right flex-center'>
+						<div className='box-right'>
 							<div>
 								<i className='fas fa-envelope'></i>
 								<div className='font01'>{result.name.title} {result.name.first} {result.name.last}</div>
