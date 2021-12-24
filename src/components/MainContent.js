@@ -27,8 +27,8 @@ export default class MainContent extends React.Component{
 		var fetch = this.state.fetch;
 
 		if(fetch){
-			return fetch['results'].map(result => (
-				<div key={result.id.value}>
+			return fetch['results'].map((result, i) => (
+				<div key={i}>
 					<div>{result.name.title}</div>
 					<div>{result.name.first}</div>
 					<div>{result.name.last}</div>
