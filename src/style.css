@@ -13,8 +13,36 @@ body{
 	font-family:'font1';
 }
 .font02{
-	
+	font-family:'font2';
 }
-.font03{
-	
+.border-radius{
+	border-radius:8px;
+}
+.relative{
+	position:relative;
+}
+.flex-center{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+}
+.flex{
+	display:flex;
+	flex-wrap:wrap;
+}
+/*---- MAIN CONTENT ----*/
+.box-outer{
+	margin:0 auto;
+	max-width:600px;
+}
+.box{
+	box-shadow:0px 0px 3px 1px #cdcdcd;
+	margin:10px 10px 30px 10px;
+	overflow:hidden;
+}
+.box img{
+	width:30%;
+}
+.box-right{
+	width:70%;
 }

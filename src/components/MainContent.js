@@ -28,13 +28,17 @@ export default class MainContent extends React.Component{
 
 		if(fetch){
 			return fetch['results'].map((result, i) => (
-				<div key={i}>
-					<div>{result.name.title}</div>
-					<div>{result.name.first}</div>
-					<div>{result.name.last}</div>
-					<div>{result.email}</div>
-					<div>{result.dob.age}</div>
-					<img src={result.picture.large} />
+				<div key={i} className='box-outer'>
+					<div className='box border-radius flex'>
+						<img src={result.picture.large} />
+						<div className='box-right flex-center'>
+							<div>{result.name.title}</div>
+							<div>{result.name.first}</div>
+							<div>{result.name.last}</div>
+							<div>{result.email}</div>
+							<div>{result.dob.age}</div>
+						</div>
+					</div>
 				</div>
 			));
 		}
