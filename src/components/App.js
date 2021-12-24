@@ -1,3 +1,4 @@
+'use strict'
 import React from 'react'
 import TopMenu from './TopMenu'
 import BottomMenu from './BottomMenu'
