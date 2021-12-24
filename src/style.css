@@ -42,13 +42,13 @@ body{
 	box-shadow:0px 0px 3px 1px #cdcdcd;
 	margin:10px 10px 30px 10px;
 	overflow:hidden;
+	background:url('/src/images/bg.png') center center / cover no-repeat;
 }
 .box img{
-	width:30%;
+	width:40%;
 }
 .box-right{
-	width:70%;
-	background:url('/src/images/bg.png') center center / cover no-repeat;
+	width:60%;
 }
 .box-right div{
 	margin-top:15px;
