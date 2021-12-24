@@ -30,6 +30,9 @@ body{
 	display:flex;
 	flex-wrap:wrap;
 }
+.text-center{
+	text-align:center;
+}
 /*---- MAIN CONTENT ----*/
 .box-outer{
 	margin:0 auto;
@@ -45,4 +48,10 @@ body{
 }
 .box-right{
 	width:70%;
+}
+.box-right div{
+	margin-top:15px;
+}
+.box-right div:first-child{
+	margin-top:0;
 }

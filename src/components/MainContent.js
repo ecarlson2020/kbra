@@ -31,12 +31,12 @@ export default class MainContent extends React.Component{
 				<div key={i} className='box-outer'>
 					<div className='box border-radius flex'>
 						<img src={result.picture.large} />
-						<div className='box-right flex-center'>
-							<div>{result.name.title}</div>
-							<div>{result.name.first}</div>
-							<div>{result.name.last}</div>
-							<div>{result.email}</div>
-							<div>{result.dob.age}</div>
+						<div className='box-right flex-center text-center'>
+							<div>
+								<div className='font01'>{result.name.title} {result.name.first} {result.name.last}</div>
+								<div>{result.email}</div>
+								<div>{result.dob.age}</div>
+							</div>
 						</div>
 					</div>
 				</div>
