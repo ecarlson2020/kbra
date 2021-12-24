@@ -1,3 +1,20 @@
+@font-face{
+	font-family:'font1';
+	src:url('fonts/Oswald-Regular.ttf');
+}
+@font-face{
+	font-family:'font2';
+	src:url('fonts/Raleway-Regular.ttf');
+}
 body{
-	background:red;
+	font-family:'font2';
+}
+.font01{
+	font-family:'font1';
+}
+.font02{
+	
+}
+.font03{
+	
 }
