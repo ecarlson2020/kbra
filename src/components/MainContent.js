@@ -35,7 +35,7 @@ export default class MainContent extends React.Component{
 							<div>
 								<div className='font01'>{result.name.title} {result.name.first} {result.name.last}</div>
 								<div>{result.email}</div>
-								<div>{result.dob.age}</div>
+								<div className='age'>{result.dob.age}</div>
 							</div>
 						</div>
 					</div>
