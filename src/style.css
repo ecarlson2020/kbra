@@ -48,7 +48,7 @@ body{
 }
 .box-right{
 	width:70%;
-	background:url('/images/bg.png') center center / cover no-repeat;
+	background:url('/src/images/bg.png') center center / cover no-repeat;
 }
 .box-right div{
 	margin-top:15px;
