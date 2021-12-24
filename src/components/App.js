@@ -1,10 +1,15 @@
 import React from 'react'
+import TopMenu from './TopMenu'
+import BottomMenu from './BottomMenu'
+import MainContent from './MainContent'
 
 export default class App extends React.Component{
 	render(){
 		return (
 			<div className="App">
-				hello
+				<TopMenu />
+				<BottomMenu />
+				<MainContent />
 			</div>
 		);
 	}
