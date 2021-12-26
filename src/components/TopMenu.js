@@ -18,7 +18,7 @@ export default class TopMenu extends React.Component{
 			<div id='top-menu' className={(this.state.displayed ? "transform-none" : "")}>
 				<div id='top-menu-inner'>
 					<div className='margin03 font03'>
-						<img src='/logo512.png' />
+						<img src='/images/logo512.png' />
 						<span>Evan Carlson - Technical Challenge</span>
 					</div>
 				</div>

@@ -3,6 +3,7 @@ import React from 'react'
 import TopMenu from './TopMenu'
 import BottomMenu from './BottomMenu'
 import MainContent from './MainContent'
+import Loading from './Loading'
 import {react_objs, my_scroll} from '../functions'
 
 export default class App extends React.Component{
@@ -12,18 +13,24 @@ export default class App extends React.Component{
 		this.state = {
 			page_num: null,
 			fetch: null,
+			loading: true,
 		}
 
 		react_objs.app = this;
 	}
 
 	fetch_json(page_num){
+		this.setState({
+			loading: true,
+		});
+
 		fetch("https://randomuser.me/api/?page=" + page_num + "&results=10&seed=abc")
 			.then(response => response.json())
 			.then(data => {
 				this.setState({
 					page_num: page_num,
 					fetch: data,
+					loading: false,
 				})
 			})
 		;
@@ -46,6 +53,7 @@ export default class App extends React.Component{
 	render(){
 		return (
 			<div className="App">
+				<Loading is_displayed={this.state.loading} />
 				<TopMenu />
 				<MainContent fetch={this.state.fetch} />
 				<BottomMenu page_num={this.state.page_num} />
