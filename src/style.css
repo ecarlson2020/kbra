@@ -47,11 +47,14 @@ body{
 .margin02{
 	margin:15px 0 15px 15px;
 }
+.margin03{
+	margin:0 10px;
+}
 .fas{
 	margin-right:5px;
 }
 /*---- MAIN CONTENT ----*/
-.box-outer, #top-menu div{
+.box-outer, #top-menu-inner{
 	margin:0 auto;
 	max-width:600px;
 }
@@ -121,6 +124,10 @@ body{
 #top-menu{
 	color:#fff;
 	background:#22285d;
+	line-height:80px;
 }
-#top-menu div{
+#top-menu img{
+	width:40px;
+	vertical-align:-15px;
+	margin-right:10px;
 }
