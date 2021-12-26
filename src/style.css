@@ -8,6 +8,7 @@
 body{
 	font-family:'font2';
 	font-size:14px;
+	margin:0;
 }
 .font01{
 	font-family:'font1';
@@ -43,7 +44,7 @@ body{
 	margin-right:5px;
 }
 /*---- MAIN CONTENT ----*/
-.box-outer{
+.box-outer, #top-menu div{
 	margin:0 auto;
 	max-width:600px;
 }
@@ -109,4 +110,12 @@ body{
 .design07{
 	right:1px;
 	bottom:43px;
+}
+/*---- TOP MENU ----*/
+#top-menu{
+	color:#fff;
+	background:#22285d;
+}
+#top-menu div{
+	margin:0 10px;
 }
