@@ -33,6 +33,7 @@ export default class MainContent extends React.Component{
 						<img src={result.picture.large} />
 						<div className='box-right'>
 							<div>
+								<div className='design design01'></div>
 								<i className='fas fa-envelope'></i>
 								<div className='font01'>{result.name.title} {result.name.first} {result.name.last}</div>
 								<div>{result.email}</div>

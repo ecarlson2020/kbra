@@ -42,7 +42,13 @@ body{
 	box-shadow:0px 0px 3px 1px #cdcdcd;
 	margin:10px 10px 30px 10px;
 	overflow:hidden;
-	background:#265c93;
 	color:#fff;
 	height:275px;
+}
+.design{
+	width:50px;
+	height:50px;
+}
+.design01{
+	
 }
