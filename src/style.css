@@ -47,31 +47,56 @@ body{
 }
 .design{
 	background:linear-gradient(45deg, #8300e6, #00e8ff);
-	transform:rotate(315deg);
 	position:absolute;
 	border-radius:100px;
 }
 .design-small{
 	width:60px;
 	height:25px;
+	z-index:3;
+	transform:rotate(315deg);
 }
 .design-medium{
 	width:133px;
 	height:54px;
+	z-index:2;
+	transform:rotate(135deg);
 }
 .design-large{
 	width:280px;
 	height:130px;
+	z-index:1;
+	transform:rotate(315deg);
 }
 .design01{
-	right:10px;
-	top:50px;
+	right:85px;
+	top:115px;
 }
 .design02{
-	right:80px;
-	top:50px;
+	right:132px;
+	top:24px;
 }
 .design03{
-	right:120px;
+	right:-75px;
 	top:20px;
+}
+.design04{
+	right:-23px;
+	top:205px;
+}
+.design05{
+	right:131px;
+	top:261px;
+}
+.design06{
+	right:-50px;
+	top:32px;
+}
+.design07{
+	right:1px;
+	bottom:43px;
+}
+.design08{
+	right:260px;
+	bottom:43px;
 }
