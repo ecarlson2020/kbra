@@ -30,6 +30,8 @@ export default class BottomMenu extends React.Component{
 		this.setState({
 			active_page: num,
 		});
+
+		react_objs.main_content.fetch_json(num);
 	}
 
 	render(){

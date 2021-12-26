@@ -1,13 +1,21 @@
 'use strict'
 import React from 'react'
+import {react_objs} from '../functions'
 
 export default class MainContent extends React.Component{
-	state = {
-		fetch: null,
+	constructor(props){
+		super(props)
+
+		this.state = {
+			displayed: true,
+			active_page: 1,
+		}
+
+		react_objs.main_content = this;
 	}
 
-	fetch_json(){
-		fetch('https://randomuser.me/api/?page=1&results=10&seed=abc')
+	fetch_json(page_num){
+		fetch("https://randomuser.me/api/?page=" + page_num + "&results=10&seed=abc")
 			.then(response => response.json())
 			.then(data => {
 				console.log(data);
@@ -20,7 +28,7 @@ export default class MainContent extends React.Component{
 	}
 
 	componentDidMount(){
-		this.fetch_json();
+		this.fetch_json(1);
 	}
 
 	map_results(){

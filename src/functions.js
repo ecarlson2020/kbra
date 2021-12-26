@@ -1,6 +1,7 @@
 export const react_objs = {
 	top_menu: null,
 	bottom_menu: null,
+	main_content: null,
 }
 
 export const my_scroll = {
