@@ -26,6 +26,8 @@ export default class BottomMenu extends React.Component{
 	}
 
 	set_active_page(num){
+
+		//https://stackoverflow.com/questions/3338642/updating-address-bar-with-new-url-without-hash-or-reloading-the-page
 		window.history.pushState("object or string", "Title", "/?page=" + num);
 
 		react_objs.app.fetch_json(num);
