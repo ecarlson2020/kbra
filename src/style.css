@@ -57,7 +57,7 @@ body{
 }
 .box img{
 	border-radius:100%;
-	border:6px solid #b7b324;
+	border:6px solid #d4ce17;
 	display:block;
 }
 .box .font01{
@@ -112,9 +112,5 @@ body{
 }
 .design07{
 	right:1px;
-	bottom:43px;
-}
-.design08{
-	right:260px;
 	bottom:43px;
 }
