@@ -48,7 +48,6 @@ export default class MainContent extends React.Component{
 						<div className='design design-small design07'></div>
 						<div className='design design-large design03'></div>
 						<div className='design design-large design04'></div>
-						<div className='design design-large design05'></div>
 					</div>
 				</div>
 			));
