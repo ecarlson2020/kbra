@@ -60,6 +60,9 @@ body{
 .transform-none{
 	transform:none !important;
 }
+.hide{
+	display:none;
+}
 /*---- MAIN CONTENT ----*/
 .box-outer, #top-menu-inner, #bottom-menu-inner{
 	margin:0 auto;
@@ -166,4 +169,13 @@ body{
 .page-number.active{
 	color:#fff;
 	background:#22285d;
+}
+/*---- BOTTOM MENU ----*/
+.loading img{
+	display:block;
+	position:fixed;
+	left:calc(50% - 100px);
+	width:200px;
+	z-index:5;
+	top:100px;
 }

@@ -4,8 +4,8 @@ import React from 'react'
 export default class Loading extends React.Component{
 	render(){
 		return (
-			<div>
-				<img src='/images/loading.gif' />
+			<div className={"loading" + (this.props.is_displayed ? "" : " hide")}>
+				<img className='border-radius' src='/images/loading.gif' />
 			</div>
 		)
 	}
