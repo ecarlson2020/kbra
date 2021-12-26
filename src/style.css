@@ -38,7 +38,7 @@ body{
 	margin-top:5px;
 }
 .margin02{
-	margin:15px 0 0 15px;
+	margin:15px 0 15px 15px;
 }
 .fas{
 	margin-right:5px;
@@ -53,7 +53,6 @@ body{
 	margin:10px 10px 30px 10px;
 	overflow:hidden;
 	color:#fff;
-	height:275px;
 	background:#22285d;
 }
 .box img{
