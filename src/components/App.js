@@ -21,8 +21,6 @@ export default class App extends React.Component{
 		fetch("https://randomuser.me/api/?page=" + page_num + "&results=10&seed=abc")
 			.then(response => response.json())
 			.then(data => {
-				console.log(page_num, data);
-
 				this.setState({
 					page_num: page_num,
 					fetch: data,
