@@ -52,6 +52,7 @@ body{
 }
 .fas{
 	margin-right:5px;
+	width:14px;
 }
 /*---- MAIN CONTENT ----*/
 .box-outer, #top-menu-inner{
@@ -125,6 +126,9 @@ body{
 	color:#fff;
 	background:#22285d;
 	line-height:80px;
+	position:sticky;
+	top:0;
+	z-index:4;
 }
 #top-menu img{
 	width:40px;
