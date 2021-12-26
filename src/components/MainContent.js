@@ -3,41 +3,8 @@ import React from 'react'
 import {react_objs} from '../functions'
 
 export default class MainContent extends React.Component{
-	constructor(props){
-		super(props)
-
-		this.state = {
-			displayed: true,
-		}
-
-		react_objs.main_content = this;
-	}
-
-	fetch_json(page_num){
-		fetch("https://randomuser.me/api/?page=" + page_num + "&results=10&seed=abc")
-			.then(response => response.json())
-			.then(data => {
-				console.log(data);
-
-				this.setState({
-					fetch: data
-				})
-			})
-		;
-	}
-
-	componentDidMount(){
-
-		//use page from url, otherwise default to page 1
-		const search = window.location.search;
-		const my_match = search ? search.match(/\?page=\d+/g) : '';
-		const page_num_from_url = my_match && my_match[0] ? +my_match[0].match(/\d+/) : '';
-
-		this.fetch_json(page_num_from_url ? page_num_from_url : 1);
-	}
-
 	map_results(){
-		var fetch = this.state.fetch;
+		var fetch = this.props.fetch;
 
 		if(fetch){
 			return fetch['results'].map((result, i) => (

@@ -8,10 +8,9 @@ export default class BottomMenu extends React.Component{
 
 		this.state = {
 			displayed: true,
-			active_page: 1,
 		}
 
-		react_objs.top_menu = this;
+		react_objs.bottom_menu = this;
 	}
 
 	draw_page_numbers(){
@@ -20,18 +19,16 @@ export default class BottomMenu extends React.Component{
 		return arr.map((el, i) => (
 			<div
 				key={i}
-				className={'page-number text-center' + (this.state.active_page == el ? " active" : "")}
+				className={'page-number text-center' + (this.props.page_num == el ? " active" : "")}
 				onClick={() => this.set_active_page(el)}
 			>{el}</div>
 		))
 	}
 
 	set_active_page(num){
-		this.setState({
-			active_page: num,
-		});
+		window.history.pushState("object or string", "Title", "/?page=" + num);
 
-		react_objs.main_content.fetch_json(num);
+		react_objs.app.fetch_json(num);
 	}
 
 	render(){

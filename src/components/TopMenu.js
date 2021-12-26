@@ -10,7 +10,7 @@ export default class TopMenu extends React.Component{
 			displayed: true,
 		}
 
-		react_objs.bottom_menu = this;
+		react_objs.top_menu = this;
 	}
 
 	render(){
