@@ -162,6 +162,7 @@ body{
 	border-radius:100%;
 	width:26px;
 	padding:5px;
+	cursor:pointer;
 }
 .page-number.active{
 	color:#fff;

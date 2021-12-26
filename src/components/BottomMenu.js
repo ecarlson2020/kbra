@@ -8,7 +8,7 @@ export default class BottomMenu extends React.Component{
 
 		this.state = {
 			displayed: true,
-			active_page: 3,
+			active_page: 1,
 		}
 
 		react_objs.top_menu = this;
@@ -18,8 +18,18 @@ export default class BottomMenu extends React.Component{
 		var arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 		return arr.map((el, i) => (
-			<div key={i} className={'page-number text-center' + (this.state.active_page == el ? " active" : "")}>{el}</div>
+			<div
+				key={i}
+				className={'page-number text-center' + (this.state.active_page == el ? " active" : "")}
+				onClick={() => this.set_active_page(el)}
+			>{el}</div>
 		))
+	}
+
+	set_active_page(num){
+		this.setState({
+			active_page: num,
+		});
 	}
 
 	render(){
