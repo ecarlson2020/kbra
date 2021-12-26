@@ -8,7 +8,6 @@ export default class MainContent extends React.Component{
 
 		this.state = {
 			displayed: true,
-			active_page: 1,
 		}
 
 		react_objs.main_content = this;
@@ -28,7 +27,13 @@ export default class MainContent extends React.Component{
 	}
 
 	componentDidMount(){
-		this.fetch_json(1);
+
+		//use page from url, otherwise default to page 1
+		const search = window.location.search;
+		const my_match = search ? search.match(/\?page=\d+/g) : '';
+		const page_num_from_url = my_match && my_match[0] ? +my_match[0].match(/\d+/) : '';
+
+		this.fetch_json(page_num_from_url ? page_num_from_url : 1);
 	}
 
 	map_results(){
