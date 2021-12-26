@@ -60,9 +60,6 @@ body{
 .transform-none{
 	transform:none !important;
 }
-.hide{
-	display:none;
-}
 /*---- MAIN CONTENT ----*/
 .box-outer, #top-menu-inner, #bottom-menu-inner{
 	margin:0 auto;
@@ -175,7 +172,16 @@ body{
 	display:block;
 	position:fixed;
 	left:calc(50% - 100px);
-	width:200px;
+	width:170px;
 	z-index:5;
 	top:100px;
+	background:#fff;
+	overflow:hidden;
+	padding:15px;
+}
+.loading img{
+	width:100%;
+}
+.loading.hide{
+	display:none;
 }
