@@ -13,7 +13,7 @@ export default class App extends React.Component{
 		this.state = {
 			page_num: null,
 			fetch: null,
-			loading: true,
+			loading_status: 'gif',
 		}
 
 		react_objs.app = this;
@@ -21,7 +21,7 @@ export default class App extends React.Component{
 
 	fetch_json(page_num){
 		this.setState({
-			loading: true,
+			loading_status: 'gif',
 		});
 
 		fetch("https://randomuser.me/api/?page=" + page_num + "&results=10&seed=abc")
@@ -30,7 +30,12 @@ export default class App extends React.Component{
 				this.setState({
 					page_num: page_num,
 					fetch: data,
-					loading: false,
+					loading_status: 'done',
+				})
+			})
+			.catch(error => {
+				this.setState({
+					loading_status: 'error',
 				})
 			})
 		;
@@ -53,7 +58,7 @@ export default class App extends React.Component{
 	render(){
 		return (
 			<div className="App">
-				<Loading is_displayed={this.state.loading} />
+				<Loading loading_status={this.state.loading_status} />
 				<TopMenu />
 				<MainContent fetch={this.state.fetch} />
 				<BottomMenu page_num={this.state.page_num} />
