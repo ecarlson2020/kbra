@@ -5,6 +5,10 @@
 	font-family:'font2';
 	src:url('fonts/Raleway-Regular.ttf');
 }
+@font-face{
+	font-family:'font3';
+	src:url('fonts/SonsieOne-Regular.ttf');
+}
 body{
 	font-family:'font2';
 	font-size:14px;
@@ -15,6 +19,9 @@ body{
 }
 .font02{
 	font-family:'font2';
+}
+.font03{
+	font-family:'font3';
 }
 .border-radius{
 	border-radius:8px;
@@ -116,5 +123,4 @@ body{
 	background:#22285d;
 }
 #top-menu div{
-	margin:0 10px;
 }
