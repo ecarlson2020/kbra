@@ -61,6 +61,9 @@ body{
 	transform:none !important;
 }
 /*---- MAIN CONTENT ----*/
+#main-content{
+	margin-bottom:150px;
+}
 .box-outer, #top-menu-inner, #bottom-menu-inner{
 	margin:0 auto;
 	max-width:600px;
