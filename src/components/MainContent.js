@@ -30,7 +30,18 @@ export default class MainContent extends React.Component{
 			return fetch['results'].map((result, i) => (
 				<div key={i} className='box-outer'>
 					<div className='box border-radius relative'>
-						<img src={result.picture.large} />
+						<div className='margin02'>
+							<img src={result.picture.large} />
+							<div className='margin01 font01'>{result.name.title} {result.name.first} {result.name.last}</div>
+							<div className='margin01'>
+								<i className='fas fa-envelope'></i>
+								{result.email}
+							</div>
+							<div className='margin01'>
+								<i className='fas fa-user'></i>
+								{result.dob.age}
+							</div>
+						</div>
 						<div className='design design-medium design01'></div>
 						<div className='design design-medium design06'></div>
 						<div className='design design-small design02'></div>
@@ -39,10 +50,6 @@ export default class MainContent extends React.Component{
 						<div className='design design-large design03'></div>
 						<div className='design design-large design04'></div>
 						<div className='design design-large design05'></div>
-						<i className='fas fa-envelope'></i>
-						<div className='font01'>{result.name.title} {result.name.first} {result.name.last}</div>
-						<div>{result.email}</div>
-						<div className='age'>{result.dob.age}</div>
 					</div>
 				</div>
 			));

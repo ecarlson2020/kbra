@@ -7,6 +7,7 @@
 }
 body{
 	font-family:'font2';
+	font-size:14px;
 }
 .font01{
 	font-family:'font1';
@@ -32,6 +33,15 @@ body{
 .text-center{
 	text-align:center;
 }
+.margin01{
+	margin-top:5px;
+}
+.margin02{
+	margin:15px 0 0 15px;
+}
+.fas{
+	margin-right:5px;
+}
 /*---- MAIN CONTENT ----*/
 .box-outer{
 	margin:0 auto;
@@ -44,6 +54,14 @@ body{
 	color:#fff;
 	height:275px;
 	background:#22285d;
+}
+.box img{
+	border-radius:100%;
+	border:6px solid #b7b324;
+	display:block;
+}
+.box .font01{
+	font-size:35px;
 }
 .design{
 	background:linear-gradient(45deg, #8300e6, #00e8ff);
