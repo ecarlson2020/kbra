@@ -58,7 +58,7 @@ export default class MainContent extends React.Component{
 
 	render(){
 		return (
-			<div>
+			<div id='main-content'>
 				{this.map_results()}
 			</div>
 		);
