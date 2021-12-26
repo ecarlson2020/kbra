@@ -129,10 +129,10 @@ body{
 }
 /*---- TOP MENU ----*/
 #top-menu, #bottom-menu{
-	transition:0.3s ease transform;
 	z-index:4;
 }
 #top-menu{
+	transition:0.3s ease transform;
 	transform:translateY(-100px);
 	color:#fff;
 	background:#22285d;
@@ -153,7 +153,6 @@ body{
 	padding:25px;
 	left:calc(50% - 275px);
 	width:500px;
-	transform:translateY(100px);
 }
 .page-number{
 	display:inline-block;

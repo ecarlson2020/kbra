@@ -19,19 +19,11 @@ export const my_scroll = {
 					react_objs.top_menu.setState({
 						displayed: false,
 					});
-
-					react_objs.bottom_menu.setState({
-						displayed: false,
-					});
 				}
 				else{
 
 					//scrolling up
 					react_objs.top_menu.setState({
-						displayed: true,
-					});
-
-					react_objs.bottom_menu.setState({
 						displayed: true,
 					});
 				}
